@@ -11,9 +11,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install
-      - run: npx eslint --init
       - run: npm run build 
-  
   test: 
     needs: build
     runs-on: ubuntu-latest
